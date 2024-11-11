@@ -1,13 +1,13 @@
-const HeroSection = () => {
-    return (
-      <section className="hero">
-        <h1>Hi, Im <span className="highlight">Your Name</span>,</h1>
-        <h2>Web Developer</h2>
-        <p>Front End Developer / Web Design Expert</p>
-        <button className="contact-button">Contact me!</button>
-      </section>
-    );
-  };
-  
-  export default HeroSection;
-  
+import { FC } from 'react';
+
+const HeroSection: FC = () => {
+  return (
+    <section id="hero" className="hero">
+      <div className="hero-box">
+        <h1>John Bedette</h1>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;

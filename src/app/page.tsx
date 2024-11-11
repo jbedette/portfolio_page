@@ -1,8 +1,7 @@
 // import Link from 'next/link';
-import { FC } from 'react';
 import ProjectCard from './components/ProjectCard';
 import HeroSection from './components/HeroSection';
-import Sidebar from './components/Sidebar';
+import Layout from './components/Layout';
 
 interface Project {
   title: string;
@@ -38,20 +37,35 @@ const projects: Project[] = [
     imageUrl: "images/sample.png"
   },
 ];
-
-const Home: FC = () => {
+const Home = () => {
   return (
-    <main>
-      <Sidebar></Sidebar> 
-      <HeroSection></HeroSection> 
-      <section className="projects-grid">
-        <h1>Projects</h1>
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+    <Layout>
+      <HeroSection />
+      <section id="projects" className="projects-section">
+        <h2>Projects</h2>
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
       </section>
-    </main>
+    </Layout>
   );
 };
+
+// const Home: FC = () => {
+//   return (
+//     <main>
+//       <Sidebar></Sidebar> 
+//       <HeroSection></HeroSection> 
+//       <section className="projects-grid">
+//         <h1>Projects</h1>
+//         {projects.map((project, index) => (
+//           <ProjectCard key={index} project={project} />
+//         ))}
+//       </section>
+//     </main>
+//   );
+// };
 
 export default Home;
