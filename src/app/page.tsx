@@ -1,6 +1,8 @@
 // import Link from 'next/link';
 import { FC } from 'react';
 import ProjectCard from './components/ProjectCard';
+import HeroSection from './components/HeroSection';
+import Sidebar from './components/Sidebar';
 
 interface Project {
   title: string;
@@ -40,9 +42,8 @@ const projects: Project[] = [
 const Home: FC = () => {
   return (
     <main>
-      <h1>Welcome to My Portfolio</h1>
-      <p>I am a developer. Here are my projects:</p>
-      
+      <Sidebar></Sidebar> 
+      <HeroSection></HeroSection> 
       <section className="projects-grid">
         <h1>Projects</h1>
         {projects.map((project, index) => (
