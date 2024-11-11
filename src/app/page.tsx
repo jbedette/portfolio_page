@@ -36,6 +36,18 @@ const projects: Project[] = [
     link: `${githubAddr}prowl`,
     imageUrl: "images/sample.png"
   },
+  {
+    title: 'Prowl',
+    description: 'Brief description here.',
+    link: `${githubAddr}prowl`,
+    imageUrl: "images/sample.png"
+  },
+  {
+    title: 'Prowl',
+    description: 'Brief description here.',
+    link: `${githubAddr}prowl`,
+    imageUrl: "images/sample.png"
+  },
 ];
 const Home = () => {
   return (

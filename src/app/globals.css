@@ -158,7 +158,7 @@ body {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  gap: 35px;
 }
 
 /* Project card styling */
@@ -212,6 +212,6 @@ body {
   border-top: #000 solid 3px;
   border-bottom: #000 solid 3px;
   margin-top: 5px;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
   background-color:#f3efdd;
 }
