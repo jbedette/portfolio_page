@@ -42,7 +42,7 @@ const Home = () => {
     <Layout>
       <HeroSection />
       <section id="projects" className="projects-section">
-        <h2>Projects</h2>
+        <h2 className='sectionHeader'>Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
@@ -52,20 +52,5 @@ const Home = () => {
     </Layout>
   );
 };
-
-// const Home: FC = () => {
-//   return (
-//     <main>
-//       <Sidebar></Sidebar> 
-//       <HeroSection></HeroSection> 
-//       <section className="projects-grid">
-//         <h1>Projects</h1>
-//         {projects.map((project, index) => (
-//           <ProjectCard key={index} project={project} />
-//         ))}
-//       </section>
-//     </main>
-//   );
-// };
 
 export default Home;

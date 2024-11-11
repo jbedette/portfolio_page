@@ -8,6 +8,10 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0ead6; /* Eggshell background */
   color: #333;
+  background-image: radial-gradient(circle, black 1px, transparent 1px);
+  background-size: 20px 20px; /* Adjust size for speckle density */
+  /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="1" cy="1" r="1" fill="black" /></svg>');
+  background-size: 20px 20px; Adjust for speckle density */
 }
 
 /* Layout styles */
@@ -16,25 +20,112 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
+/* Sidebar styling */
 .sidebar {
-  background-color: #333;
-  color: #fff;
+  background-color: #f0ead6; /* Eggshell background */
+  color: #333;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
-  text-align: center;
+  width: auto;
+  min-width: fit-content; /* Ensure sidebar is only as wide as the longest word */
+  max-width: 200px; /* Set a max-width for control on larger screens */
+}
+
+/* Sidebar links and line above each link */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .sidebar nav a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   padding: 0.5rem;
-  transition: color 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.sidebar nav a:hover {
-  color: #ddd;
+
+.sidebar nav a span {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+/* Line above each link */
+.sidebar nav a span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%; /* Offset from the left to create a shorter line */
+  width: 80%; /* Adjust width as needed to control line length */
+  height: 1px;
+  background-color: #aaa; /* Line color */
+}
+
+/* Styles for wide screens (sidebar on the left) */
+@media (min-width: 768px) {
+  .layout {
+    flex-direction: row;
+  }
+  .sidebar {
+    background-color: #f0ead6;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 1rem 0;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solid black; /* Right border when sidebar is on the left */
+    border-bottom: none; /* Remove bottom border */
+  }
+  .content {
+    margin-left: auto;
+    padding: 2rem;
+    flex: 1;
+  }
+}
+
+/* Styles for small screens (sidebar across the top) */
+@media (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black; /* Bottom border when sidebar is on top */
+    border-right: none; /* Remove right border */
+  }
+  
+  .sidebar nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .sidebar nav a {
+    width: auto;
+  }
+  
+  .sidebar nav a span:before {
+    content: "";
+    width: 100%; /* Full width line above each link */
+    left: 0;
+  }
 }
 
 /* Hero section styles */
@@ -49,9 +140,10 @@ body {
 .hero-box {
   padding: 2rem;
   border: 1px solid #000;
+  border-radius: 2px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
+  background-color:#f3efdd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .hero-box h1 {
   font-size: 2.5rem;
@@ -71,12 +163,12 @@ body {
 
 /* Project card styling */
 .project-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background: #f3efdd;
+  border: 1px solid #000;
+  border-radius: 2px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-card img {
@@ -114,4 +206,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
+.sectionHeader {
+  border-top: #000 solid 3px;
+  border-bottom: #000 solid 3px;
+  margin-top: 5px;
+  margin-bottom: 21px;
+  background-color:#f3efdd;
 }
