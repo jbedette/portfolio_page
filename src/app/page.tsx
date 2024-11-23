@@ -31,10 +31,10 @@ const projects: Project[] = [
     imageUrl: "images/sample.png"
   },
   {
-    title: 'Prowl',
-    description: 'Brief description here.',
-    link: `${githubAddr}prowl`,
-    imageUrl: "images/sample.png"
+    title: 'MTG momir format card printer',
+    description: 'Physical gadget that uses scryfall.com\'s api to generate a low resolution black and white MTG card, connect with a thermal printer via bluetooth credential spoofing and print it on a label',
+    link: `${githubAddr}momir`,
+    imageUrl: "images/momir_gui.png"
   },
   {
     title: 'Prowl',
