@@ -5,7 +5,6 @@ const HeroSection: FC = () => {
     <section id="hero" className="hero">
       <div className="hero-box">
         <h1>John Bedette</h1>
-        <h1>11-23 12:57</h1>
       </div>
     </section>
   );
