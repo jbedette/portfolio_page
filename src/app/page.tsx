@@ -19,10 +19,10 @@ const projects: Project[] = [
     imageUrl: "images/sample.png"
   },
   {
-    title: 'BlockWright',
-    description: 'Brief description here.',
-    link: `${githubAddr}blockWright`,
-    imageUrl: "images/sample.png"
+    title: 'Virtualized and Containerized Secure Homelab',
+    description: 'FreeBSD vm Router protecting an Ubunter server vm ',
+    link: `${githubAddr}prowl`,
+    imageUrl: "images/wazuh_portal.png"
   },
   {
     title: 'Aws CI/CD',
@@ -37,10 +37,10 @@ const projects: Project[] = [
     imageUrl: "images/momir_gui.png"
   },
   {
-    title: 'Prowl',
-    description: 'Brief description here.',
-    link: `${githubAddr}prowl`,
-    imageUrl: "images/sample.png"
+    title: 'BlockWright',
+    description: 'An exercise in application planning and thoughful development through a gamedev lens, a small app with a target audience and development timeline',
+    link: `${githubAddr}blockWright`,
+    imageUrl: "images/blockwright_alpha.png"
   },
   {
     title: 'Prowl',
