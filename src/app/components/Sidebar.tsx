@@ -26,6 +26,9 @@ const Sidebar: FC = () => {
         <Link href="#projects">
           <span>Projects</span>
         </Link>
+        <Link href="#about">
+          <span>About Me</span>
+        </Link>
       </nav>
     </aside>
   );

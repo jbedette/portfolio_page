@@ -2,6 +2,7 @@
 import ProjectCard from './components/ProjectCard';
 import HeroSection from './components/HeroSection';
 import Layout from './components/Layout';
+import About from './components/About';
 
 interface Project {
   title: string;
@@ -61,6 +62,7 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <About/>
     </Layout>
   );
 };
