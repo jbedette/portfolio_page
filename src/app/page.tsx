@@ -15,7 +15,7 @@ const githubAddr: string = "https://github.com/jbedette/";
 const projects: Project[] = [
   {
     title: 'Property Walkability Analysis',
-    description: 'Brief description here.',
+    description: 'A firefox extension to provide a more in-depth analysis of location, written in mostly python',
     link: `${githubAddr}property_location_analysis`,
     imageUrl: "images/property_analysis.png"
   },
