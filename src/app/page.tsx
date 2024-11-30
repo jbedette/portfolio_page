@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: 'Property Walkability Analysis',
     description: 'Brief description here.',
     link: `${githubAddr}property_location_analysis`,
-    imageUrl: "images/sample.png"
+    imageUrl: "images/property_analysis.png"
   },
   {
     title: 'Virtualized and Containerized Secure Homelab',
