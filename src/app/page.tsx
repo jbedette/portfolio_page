@@ -26,10 +26,10 @@ const projects: Project[] = [
     imageUrl: "images/wazuh_portal.png"
   },
   {
-    title: 'Aws CI/CD',
-    description: 'Brief description here.',
-    link: `${githubAddr}aws_ci_cd`,
-    imageUrl: "images/sample.png"
+    title: 'AI/ML Financial Sentiment Analysis',
+    description: 'Using 10-k reports taken from SEC-Edgar, analyze ',
+    link: `${githubAddr}ai_10-k_analyzer`,
+    imageUrl: "images/ai_fin_sent.jpg"
   },
   {
     title: 'MTG momir format card printer',
